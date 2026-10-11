@@ -33,6 +33,8 @@ def parse_build_profile(profile_filepath, api):
         front.append("FileAccess")
         front.append("Image")
         front.append("XMLParser")
+        # src/core/print_string.cpp calls OS::is_stdout_verbose().
+        front.append("OS")
     while front:
         cls = front.pop()
         if cls in included:

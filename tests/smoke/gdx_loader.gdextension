@@ -1,0 +1,8 @@
+[configuration]
+entry_symbol = "gdx_loader_init"
+compatibility_minimum = "4.8"
+reloadable = false
+
+[libraries]
+; Template: tools/smoke.py creates the platform descriptor beside the binary.
+windows.x86_64 = "res://gdx_loader.dll"
